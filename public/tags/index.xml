@@ -1,46 +1,46 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Beautiful Hugo</title>
-    <link>https://seanken.github.io/tags/</link>
-    <description>Recent content in Tags on Beautiful Hugo</description>
+    <title>Tags on Is That What The Data Says</title>
+    <link>https://seanken.github.io/public/tags/</link>
+    <description>Recent content in Tags on Is That What The Data Says</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>youremail@domain.com (Some Person)</managingEditor>
     <webMaster>youremail@domain.com (Some Person)</webMaster>
-    <lastBuildDate>Mon, 20 Mar 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://seanken.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 20 Mar 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://seanken.github.io/public/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>example</title>
-      <link>https://seanken.github.io/tags/example/</link>
+      <link>https://seanken.github.io/public/tags/example/</link>
       <pubDate>Mon, 20 Mar 2017 00:00:00 +0000</pubDate>
       <author>youremail@domain.com (Some Person)</author>
-      <guid>https://seanken.github.io/tags/example/</guid>
+      <guid>https://seanken.github.io/public/tags/example/</guid>
       <description></description>
     </item>
     
     <item>
       <title>photoswipe</title>
-      <link>https://seanken.github.io/tags/photoswipe/</link>
+      <link>https://seanken.github.io/public/tags/photoswipe/</link>
       <pubDate>Mon, 20 Mar 2017 00:00:00 +0000</pubDate>
       <author>youremail@domain.com (Some Person)</author>
-      <guid>https://seanken.github.io/tags/photoswipe/</guid>
+      <guid>https://seanken.github.io/public/tags/photoswipe/</guid>
       <description></description>
     </item>
     
     <item>
       <title>bigimg</title>
-      <link>https://seanken.github.io/tags/bigimg/</link>
+      <link>https://seanken.github.io/public/tags/bigimg/</link>
       <pubDate>Tue, 07 Mar 2017 00:00:00 +0000</pubDate>
       <author>youremail@domain.com (Some Person)</author>
-      <guid>https://seanken.github.io/tags/bigimg/</guid>
+      <guid>https://seanken.github.io/public/tags/bigimg/</guid>
       <description></description>
     </item>
     
     <item>
       <title>math</title>
-      <link>https://seanken.github.io/tags/math/</link>
+      <link>https://seanken.github.io/public/tags/math/</link>
       <pubDate>Sun, 05 Mar 2017 00:00:00 +0000</pubDate>
       <author>youremail@domain.com (Some Person)</author>
-      <guid>https://seanken.github.io/tags/math/</guid>
+      <guid>https://seanken.github.io/public/tags/math/</guid>
       <description></description>
     </item>
     
