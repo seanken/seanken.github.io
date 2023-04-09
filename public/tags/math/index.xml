@@ -5,14 +5,14 @@
     <link>https://seanken.github.io/public/tags/math/</link>
     <description>Recent content in math on Is That What The Data Says</description>
     <generator>Hugo -- gohugo.io</generator>
-    <managingEditor>youremail@domain.com (Some Person)</managingEditor>
-    <webMaster>youremail@domain.com (Some Person)</webMaster>
+    <managingEditor>seankenneths@gmail.com (Sean Simmons)</managingEditor>
+    <webMaster>seankenneths@gmail.com (Sean Simmons)</webMaster>
     <lastBuildDate>Sun, 05 Mar 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://seanken.github.io/public/tags/math/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Math Sample</title>
       <link>https://seanken.github.io/public/post/2017-03-05-math-sample/</link>
       <pubDate>Sun, 05 Mar 2017 00:00:00 +0000</pubDate>
-      <author>youremail@domain.com (Some Person)</author>
+      <author>seankenneths@gmail.com (Sean Simmons)</author>
       <guid>https://seanken.github.io/public/post/2017-03-05-math-sample/</guid>
       <description>&lt;p&gt;KaTeX can be used to generate complex math formulas server-side.&lt;/p&gt;
 &lt;p&gt;$$
