@@ -45,16 +45,10 @@ pygmentsCodefencesGuessSyntax = true
 [Author]
   # Set only your "username" for default hosts and full URLs otherwise (e.g., "https://MyGitLab.org/username")
   name = "Sean Simmons"
-  #website = "yourwebsite.com"
   email = "seankenneths@gmail.com"
-  #facebook = "username"
   github = "seanken"
-  #gitlab = "username"
-  #bitbucket = "username"
   twitter = "seankenneths"
-  #reddit = "username"
-  linkedin = "username"
-
+  linkedin = "sean-simmons-8ba9a35a"
   mastodon = "url"
 
 
