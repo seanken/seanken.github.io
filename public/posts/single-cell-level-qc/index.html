@@ -10,9 +10,9 @@
  
 
 
-      <title>About me - </title>
+      <title>Single Cell Level QC - </title>
 
-  <meta name="description" content="Who am I anyways?">
+  <meta name="description" content="Cell Level QC One thing that bothered me when I started working with 10X data (roughly 2016, after having worked with Smart-seq2 single nuclei data) is that for many metrics (percent intronic reads, percent intergenic reads, etc), though it was easy to get sample level values, but much less straightforward to get cell level metrics. Since then the situation has gotten better, with much work on using different metrics to help remove low quality cells.">
   <meta name="author" content="Sean Simmons"/><script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -48,8 +48,8 @@
         "@type": "ListItem",
         "position": 3,
         "item": {
-          "@id": "https:\/\/seanken.github.io\/public\/page\/about\/",
-          "name": "About me"
+          "@id": "https:\/\/seanken.github.io\/public\/posts\/single-cell-level-qc\/",
+          "name": "Single cell level qc"
         }
     }]
 }
@@ -60,15 +60,15 @@
   "author": {
     "name" : "Sean Simmons"
   },
-  "headline": "About me",
-  "description" : "My name is Sean Simmons and I am currently a Senior Computational Biologist over at the Broad Institute in Joshua Levin\u0026rsquo;s group in the Stanley Center. I\u0026rsquo;ve been working with single cell and single nucleus data since before it was cool\u0026ndash;way back in 2016, when a few hundred cells was a big deal! I\u0026rsquo;ve worked on a lot of projects at the corner of RNA-seq (usually single nuclei or single cell, but sometmes spatial or bulk as well) and neuroscience (with a particular focus on neuropsychiatric disorders).",
+  "headline": "Single Cell Level QC",
+  "description" : "Cell Level QC One thing that bothered me when I started working with 10X data (roughly 2016, after having worked with Smart-seq2 single nuclei data) is that for many metrics (percent intronic reads, percent intergenic reads, etc), though it was easy to get sample level values, but much less straightforward to get cell level metrics. Since then the situation has gotten better, with much work on using different metrics to help remove low quality cells.",
   "inLanguage" : "en",
-  "wordCount":  116 ,
-  "datePublished" : "0001-01-01T00:00:00",
-  "dateModified" : "0001-01-01T00:00:00",
+  "wordCount":  627 ,
+  "datePublished" : "2023-04-09T21:43:39",
+  "dateModified" : "2023-04-09T21:43:39",
   "image" : "https:\/\/seanken.github.io\/public",
   "keywords" : [ "" ],
-  "mainEntityOfPage" : "https:\/\/seanken.github.io\/public\/page\/about\/",
+  "mainEntityOfPage" : "https:\/\/seanken.github.io\/public\/posts\/single-cell-level-qc\/",
   "publisher" : {
     "@type": "Organization",
     "name" : "https:\/\/seanken.github.io\/public",
@@ -82,14 +82,14 @@
 }
 </script>
 
-<meta property="og:title" content="About me" />
-<meta property="og:description" content="Who am I anyways?">
-<meta property="og:url" content="https://seanken.github.io/public/page/about/" />
+<meta property="og:title" content="Single Cell Level QC" />
+<meta property="og:description" content="Cell Level QC One thing that bothered me when I started working with 10X data (roughly 2016, after having worked with Smart-seq2 single nuclei data) is that for many metrics (percent intronic reads, percent intergenic reads, etc), though it was easy to get sample level values, but much less straightforward to get cell level metrics. Since then the situation has gotten better, with much work on using different metrics to help remove low quality cells.">
+<meta property="og:url" content="https://seanken.github.io/public/posts/single-cell-level-qc/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Is That Really What The Data Says?" />
 
-  <meta name="twitter:title" content="About me" />
-  <meta name="twitter:description" content="Who am I anyways?">
+  <meta name="twitter:title" content="Single Cell Level QC" />
+  <meta name="twitter:description" content="Cell Level QC One thing that bothered me when I started working with 10X data (roughly 2016, after having worked with Smart-seq2 single nuclei data) is that for many metrics (percent intronic reads, …">
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@seankenneths" />
   <meta name="twitter:creator" content="@seankenneths" />
@@ -212,17 +212,13 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            <div class="page-heading">
+            <div class="posts-heading">
               
-                <h1>About me</h1>
+                <h1>Single Cell Level QC</h1>
               
               
                 <hr class="small">
               
-              
-                
-                  <span class="page-subheading">Who am I anyways?</span>
-                
               
               
             </div>
@@ -239,7 +235,32 @@
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
-        <p>My name is Sean Simmons and I am currently a Senior Computational Biologist over at the Broad Institute in Joshua Levin&rsquo;s group in the Stanley Center. I&rsquo;ve been working with single cell and single nucleus data since before it was cool&ndash;way back in 2016, when a few hundred cells was a big deal! I&rsquo;ve worked on a lot of projects at the corner of RNA-seq (usually single nuclei or single cell, but sometmes spatial or bulk as well) and neuroscience (with a particular focus on neuropsychiatric disorders). Before that I was a grad student over at MIT (followed by a brief post doc at MIT/SFU) where I studied genomic privacy and methods to help preserve it.</p>
+        <h2 id="cell-level-qc">Cell Level QC</h2>
+<p>One thing that bothered me when I started working with 10X data (roughly 2016, after having worked with Smart-seq2 single nuclei data) is that for many metrics (percent intronic reads, percent intergenic reads, etc), though it was easy to get sample level values, but much less straightforward to get cell level metrics. Since then the situation has gotten better, with much work on using different metrics to help remove low quality cells. In particular, in recent years there has been the realization that % intronic reads in particular give a lot of insight for seperating real cells or nuclei from empty droplets and debris (the first such paper I am aware of was the DropletQC [link] paper, with more recent papers from the Kellis lab [link] looking at it for single nuclei data, or papers from the &hellip; lab [link] look at it at an atlas scale).</p>
+<p>In particular, in the case of single nuclei data, the more reads that are from the nucleus the higher percent intronic reads one would expect, allowing us to seperate nuclei from empty droplets and other parts of the cell (something a recent paper we were slightly involved with explored to help understand ambient RNA [link]). This raises two questions: are there other metrics that will give us similiar (or even more) insight but which we arent reporting now? And are there better ways to get the information out after processing 10X data? In particular, for those who use CellRanger, though there is a lot of read level QC information hidden in the output bam, it can be hard to get at. In particular, to get at % intronic levels it is common to use other tools lik STARSolo, Kallisto, or others velocyto. Not to imply they are anything less than great tools (they are all great pieces of software!), but they do not calculate all the metrics we care about, and in many cases we might not want to use them.</p>
+<p>Given the above, I decided it might be worth the time to write a script to extract as much cell level QC information at possible from the CellRanger bam. As such, I built a tool I am calling CellLevel_QC (<a href="https://github.com/seanken/CellLevel_QC)">https://github.com/seanken/CellLevel_QC)</a>. It is a simple java program, all one has to do is download the jar file and run it on the outs directory from CellRanger (see the github for details). The code does not do anything particularly clever, for the most part just goes line by line in the bam file and extracts information from each bam entry. It returns many cell level QC metrics that might be of interest (% intronic reads, % intergenic, % reads trimmed by CellRanger, etc).</p>
+<h2 id="insight-from-cell-level-qc">Insight From Cell Level QC</h2>
+<p>To explore this, I used the CellLevel_QC tool to look at one sample (taken from a recent publication of ours, &hellip;).</p>
+<p>I started by running CellLevel_QC on the sample</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">java -jar SingleCellQC.jar -d outs -o out.txt
+</span></span></code></pre></div><p>where <code>outs</code> is the output directory from CellRanger (v6.1.2, run with introns included with the mm10 reference). This results in an output file, <code>out.txt</code>, into R, and normalizing counts to percent:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">library(ggplot2)
+</span></span><span class="line"><span class="cl">library(cowplot) //Not strictly needed, just to make look nice
+</span></span><span class="line"><span class="cl">theme_set(theme_cowplot()) //Not strictly needed, just to make look nice
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">dat=read.table(&#34;out.txt&#34;,header=T)
+</span></span><span class="line"><span class="cl">for(i in ..){dat[i]=100*dat[,i]/sum(dat[,i])}
+</span></span><span class="line"><span class="cl">dat=dat[dat$total&gt;10,] //Only look at droplets with at least 10 reads
+</span></span></code></pre></div><p>The first thing to look at is the nUMI versus the % intronic reads:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ggplot(dat,aes(x=nUMI,y=intronic))+geom_point()+scale_x_log10()+ylab(&#34;Percent Intronic Reads&#34;)
+</span></span></code></pre></div><p>[insert plot]</p>
+<p>Can see a nice seperation into 3 distinct clusters (with some other droplets here or there) as one might hope/expect. We do, however, have many other metrics. We can first look at how the different metric compare:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">library(ComplexHeatmap)
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">COR=cor(dat[,2:dim(dat)[2]])
+</span></span><span class="line"><span class="cl">Heatmap(COR)
+</span></span></code></pre></div><p>[insert plot]</p>
+<p>Can see obvious structure in this plot, with some</p>
 
 
         
@@ -254,42 +275,42 @@
     <ul class="share">
       
       <li>
-        <a href="//twitter.com/share?url=https%3a%2f%2fseanken.github.io%2fpublic%2fpage%2fabout%2f&amp;text=About%20me&amp;via=seankenneths" target="_blank" title="Share on Twitter">
+        <a href="//twitter.com/share?url=https%3a%2f%2fseanken.github.io%2fpublic%2fposts%2fsingle-cell-level-qc%2f&amp;text=Single%20Cell%20Level%20QC&amp;via=seankenneths" target="_blank" title="Share on Twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fseanken.github.io%2fpublic%2fpage%2fabout%2f" target="_blank" title="Share on Facebook">
+        <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fseanken.github.io%2fpublic%2fposts%2fsingle-cell-level-qc%2f" target="_blank" title="Share on Facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//reddit.com/submit?url=https%3a%2f%2fseanken.github.io%2fpublic%2fpage%2fabout%2f&amp;title=About%20me" target="_blank" title="Share on Reddit">
+        <a href="//reddit.com/submit?url=https%3a%2f%2fseanken.github.io%2fpublic%2fposts%2fsingle-cell-level-qc%2f&amp;title=Single%20Cell%20Level%20QC" target="_blank" title="Share on Reddit">
           <i class="fab fa-reddit"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fseanken.github.io%2fpublic%2fpage%2fabout%2f&amp;title=About%20me" target="_blank" title="Share on LinkedIn">
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fseanken.github.io%2fpublic%2fposts%2fsingle-cell-level-qc%2f&amp;title=Single%20Cell%20Level%20QC" target="_blank" title="Share on LinkedIn">
           <i class="fab fa-linkedin"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//www.stumbleupon.com/submit?url=https%3a%2f%2fseanken.github.io%2fpublic%2fpage%2fabout%2f&amp;title=About%20me" target="_blank" title="Share on StumbleUpon">
+        <a href="//www.stumbleupon.com/submit?url=https%3a%2f%2fseanken.github.io%2fpublic%2fposts%2fsingle-cell-level-qc%2f&amp;title=Single%20Cell%20Level%20QC" target="_blank" title="Share on StumbleUpon">
           <i class="fab fa-stumbleupon"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fseanken.github.io%2fpublic%2fpage%2fabout%2f&amp;description=About%20me" target="_blank" title="Share on Pinterest">
+        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fseanken.github.io%2fpublic%2fposts%2fsingle-cell-level-qc%2f&amp;description=Single%20Cell%20Level%20QC" target="_blank" title="Share on Pinterest">
           <i class="fab fa-pinterest"></i>
         </a>
       </li>
@@ -309,8 +330,16 @@
       </article>
 
       
+        <ul class="pager blog-pager">
+          
+          
+        </ul>
+      
 
 
+      
+        
+        
       
 
     </div>
@@ -318,14 +347,6 @@
 </div>
 
       
-    <div class="page-meta">
-  
-  
-  
-</div>
-
-
-  
 <footer>
   <div class="container">
     <div class="row">

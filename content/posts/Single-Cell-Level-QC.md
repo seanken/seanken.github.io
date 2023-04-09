@@ -1,7 +1,7 @@
 ---
 title: "Single Cell Level QC"
 date: 2023-04-09T21:43:39Z
-draft: true
+draft: false
 ---
 
 ## Cell Level QC
@@ -14,6 +14,44 @@ Given the above, I decided it might be worth the time to write a script to extra
 
 ## Insight From Cell Level QC
 
-To explore this, I used the CellLevel_QC tool to look at one 
+To explore this, I used the CellLevel_QC tool to look at one sample (taken from a recent publication of ours, ...). 
+
+I started by running CellLevel_QC on the sample
+
+```
+java -jar SingleCellQC.jar -d outs -o out.txt
+```
+
+where `outs` is the output directory from CellRanger (v6.1.2, run with introns included with the mm10 reference). This results in an output file, `out.txt`, into R, and normalizing counts to percent:
+
+```
+library(ggplot2)
+library(cowplot) //Not strictly needed, just to make look nice
+theme_set(theme_cowplot()) //Not strictly needed, just to make look nice
+
+dat=read.table("out.txt",header=T)
+for(i in ..){dat[i]=100*dat[,i]/sum(dat[,i])}
+dat=dat[dat$total>10,] //Only look at droplets with at least 10 reads
+```
+
+The first thing to look at is the nUMI versus the % intronic reads:
+
+```
+ggplot(dat,aes(x=nUMI,y=intronic))+geom_point()+scale_x_log10()+ylab("Percent Intronic Reads")
+```
+
+[insert plot]
+
+Can see a nice seperation into 3 distinct clusters (with some other droplets here or there) as one might hope/expect. We do, however, have many other metrics. We can first look at how the different metric compare:
+
+```
+library(ComplexHeatmap)
+
+COR=cor(dat[,2:dim(dat)[2]])
+Heatmap(COR)
+```
+
+[insert plot]
 
 
+Can see obvious structure in this plot, with some 
