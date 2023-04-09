@@ -3,40 +3,14 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://seanken.github.io/public/</loc>
-    <lastmod>2017-03-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
-  </url><url>
-    <loc>https://seanken.github.io/public/tags/example/</loc>
-    <lastmod>2017-03-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://seanken.github.io/public/tags/photoswipe/</loc>
-    <lastmod>2017-03-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://seanken.github.io/public/post/2017-03-20-photoswipe-gallery-sample/</loc>
-    <lastmod>2017-03-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://seanken.github.io/public/post/</loc>
-    <lastmod>2017-03-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://seanken.github.io/public/tags/</loc>
-    <lastmod>2017-03-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://seanken.github.io/public/post/2017-03-07-bigimg-sample/</loc>
-    <lastmod>2017-03-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://seanken.github.io/public/tags/bigimg/</loc>
-    <lastmod>2017-03-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://seanken.github.io/public/tags/math/</loc>
-    <lastmod>2017-03-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://seanken.github.io/public/post/2017-03-05-math-sample/</loc>
-    <lastmod>2017-03-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://seanken.github.io/public/page/about/</loc>
   </url><url>
     <loc>https://seanken.github.io/public/categories/</loc>
   </url><url>
     <loc>https://seanken.github.io/public/page/</loc>
+  </url><url>
+    <loc>https://seanken.github.io/public/tags/</loc>
   </url>
 </urlset>

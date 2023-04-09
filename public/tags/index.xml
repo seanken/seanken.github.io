@@ -6,43 +6,6 @@
     <description>Recent content in Tags on Is That Really What The Data Says?</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>seankenneths@gmail.com (Sean Simmons)</managingEditor>
-    <webMaster>seankenneths@gmail.com (Sean Simmons)</webMaster>
-    <lastBuildDate>Mon, 20 Mar 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://seanken.github.io/public/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>example</title>
-      <link>https://seanken.github.io/public/tags/example/</link>
-      <pubDate>Mon, 20 Mar 2017 00:00:00 +0000</pubDate>
-      <author>seankenneths@gmail.com (Sean Simmons)</author>
-      <guid>https://seanken.github.io/public/tags/example/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>photoswipe</title>
-      <link>https://seanken.github.io/public/tags/photoswipe/</link>
-      <pubDate>Mon, 20 Mar 2017 00:00:00 +0000</pubDate>
-      <author>seankenneths@gmail.com (Sean Simmons)</author>
-      <guid>https://seanken.github.io/public/tags/photoswipe/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>bigimg</title>
-      <link>https://seanken.github.io/public/tags/bigimg/</link>
-      <pubDate>Tue, 07 Mar 2017 00:00:00 +0000</pubDate>
-      <author>seankenneths@gmail.com (Sean Simmons)</author>
-      <guid>https://seanken.github.io/public/tags/bigimg/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>math</title>
-      <link>https://seanken.github.io/public/tags/math/</link>
-      <pubDate>Sun, 05 Mar 2017 00:00:00 +0000</pubDate>
-      <author>seankenneths@gmail.com (Sean Simmons)</author>
-      <guid>https://seanken.github.io/public/tags/math/</guid>
-      <description></description>
-    </item>
-    
+    <webMaster>seankenneths@gmail.com (Sean Simmons)</webMaster><atom:link href="https://seanken.github.io/public/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
