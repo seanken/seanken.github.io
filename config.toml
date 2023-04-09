@@ -1,6 +1,6 @@
 baseurl = "https://seanken.github.io/public"
 DefaultContentLanguage = "en"
-title = "Is That What The Data Says"
+title = "Is That Really What The Data Says?"
 theme = "beautifulhugo"
 pygmentsStyle = "trac"
 pygmentsUseClasses = true

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Is That What The Data Says</title>
+    <title>Is That Really What The Data Says?</title>
     <link>https://seanken.github.io/public/</link>
-    <description>Recent content on Is That What The Data Says</description>
+    <description>Recent content on Is That Really What The Data Says?</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>seankenneths@gmail.com (Sean Simmons)</managingEditor>
     <webMaster>seankenneths@gmail.com (Sean Simmons)</webMaster>
@@ -91,9 +91,7 @@ $$&lt;/p&gt;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>seankenneths@gmail.com (Sean Simmons)</author>
       <guid>https://seanken.github.io/public/page/about/</guid>
-      <description>My name is Inigo Montoya. I have the following qualities:
-I rock a great mustache I&amp;rsquo;m extremely loyal to my family What else do you need?
-my history To be honest, I&amp;rsquo;m having some trouble remembering right now, so why don&amp;rsquo;t you just watch my movie and it will answer all your questions.</description>
+      <description>My name is Sean Simmons and I am currently a Senior Computational Biologist over at the Broad Institute in Joshua Levin&amp;rsquo;s group in the Stanley Center. I&amp;rsquo;ve been working with single cell and single nucleus data since before it was cool&amp;ndash;way back in 2016, when a few hundred cells was a big deal! I&amp;rsquo;ve worked on a lot of projects at the corner of RNA-seq (usually single nuclei or single cell, but sometmes spatial or bulk as well) and neuroscience (with a particular focus on neuropsychiatric disorders).</description>
     </item>
     
   </channel>
