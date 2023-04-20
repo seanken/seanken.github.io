@@ -14,7 +14,7 @@
       <pubDate>Sun, 09 Apr 2023 21:43:39 +0000</pubDate>
       <author>seankenneths@gmail.com (Sean Simmons)</author>
       <guid>https://seanken.github.io/public/posts/single-cell-level-qc/</guid>
-      <description>Cell Level QC One thing that bothered me when I started working with 10X data (roughly 2016, after having worked with Smart-seq2 single nuclei data) is that for many metrics (percent intronic reads, percent intergenic reads, etc), though it was easy to get sample level values, it was much less straightforward to get cell level metrics. Since then the situation has gotten better, with much work on using different metrics to help remove low quality cells.</description>
+      <description>Cell Level QC One thing that bothered me when I started working with 10X data (roughly 2016, after having worked with Smart-seq2 single nuclei data for a couple months) is that for many metrics (percent intronic reads, percent intergenic reads, etc), though it was easy to get sample level values, it was much less straightforward to get cell level metrics. Since then the situation has gotten better, with much work on using different metrics to help remove low quality cells.</description>
     </item>
     
     <item>
