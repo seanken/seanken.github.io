@@ -1,6 +1,6 @@
 ---
 title: "Single Cell Level QC"
-date: 2023-04-09T21:43:39Z
+date: 2023-04-20T21:43:39Z
 draft: false
 ---
 
@@ -53,7 +53,7 @@ COR=cor(dat[,c(2:14,16)],method="spearman")
 Heatmap(COR)
 ```
 
-![Heatmap](https://github.com/seanken/seanken.github.io/tree/main/static/Images_Single-Cell-Level-Q/Heatmap.png)
+![Heatmap](Heatmap.png)
 
 For definition of each of the metrics see the CellLevel_QC github.
 
@@ -63,7 +63,7 @@ Can see obvious structure in this plot. The most obvious strucuture comes from t
 ggplot(dat,aes(x=nUMI,y=intronic,color=polyA>1))+geom_point()+scale_x_log10()+ylab("Percent Intronic Reads")
 ```
 
-![PolyA Trimming](https://github.com/seanken/seanken.github.io/tree/main/static/Images_Single-Cell-Level-Q/PolyA.label.png)
+![PolyA Trimming](PolyA.label.png)
 
 Can see that most of the droplets with high % polyA trimming are the lower nUMI, lower intronic droplets, which are likely empty droplets. We see something similiar for trimming of the TSO sequence, suggesting these metrics might be useful for better seperating empty droplets and real nuclei (in cases were it is less clear than the above).
 
