@@ -8,7 +8,7 @@ draft: false
 
 One thing that bothered me when I started working with 10X data (roughly 2016, after having worked with Smart-seq2 single nuclei data) is that for many metrics (percent intronic reads, percent intergenic reads, etc), though it was easy to get sample level values, but much less straightforward to get cell level metrics. Since then the situation has gotten better, with much work on using different metrics to help remove low quality cells. In particular, in recent years there has been the realization that % intronic reads in particular give a lot of insight for seperating real cells or nuclei from empty droplets and debris (the first such paper I am aware of was the DropletQC (https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02547-0) paper, with more recent papers from the Kellis lab (https://www.biorxiv.org/content/10.1101/2022.10.21.513315v1) looking at it for single nuclei data, or papers from the Linnarsson lab (https://www.biorxiv.org/content/10.1101/2022.10.24.513487v1) look at it at an atlas scale). 
 
-In particular, in the case of single nuclei data, the more reads that are from the nucleus the higher percent intronic reads one would expect, allowing us to seperate nuclei from empty droplets and other parts of the cell (something a recent paper we were slightly involved with explored to help understand ambient RNA (https://www.biorxiv.org/content/10.1101/2022.11.16.516780v1)). This raises two questions: are there other metrics that will give us similiar (or even more) insight but which we arent reporting now? And are there better ways to get the information out after processing 10X data? In particular, for those who use CellRanger, though there is a lot of read level QC information hidden in the output bam, it can be hard to get at. In particular, to get at % intronic levels it is common to use other tools lik STARSolo, Kallisto, or others velocyto. Not to imply they are anything less than great tools (they are all great pieces of software!), but they do not calculate all the metrics we care about, and in many cases we might not want to use them.
+In particular, in the case of single nuclei data, the more reads that are from the nucleus the higher percent intronic reads one would expect, allowing us to seperate nuclei from empty droplets and other parts of the cell (something a recent paper we were slightly involved with explored to help understand ambient RNA (https://www.biorxiv.org/content/10.1101/2022.11.16.516780v1). This raises two questions: are there other metrics that will give us similiar (or even more) insight but which we arent reporting now? And are there better ways to get the information out after processing 10X data? In particular, for those who use CellRanger, though there is a lot of read level QC information hidden in the output bam, it can be hard to get at. In particular, to get at % intronic levels it is common to use other tools lik STARSolo, Kallisto, or others velocyto. Not to imply they are anything less than great tools (they are all great pieces of software!), but they do not calculate all the metrics we care about, and in many cases we might not want to use them.
 
 Given the above, I decided it might be worth the time to write a script to extract as much cell level QC information at possible from the CellRanger bam. As such, I built a tool I am calling CellLevel_QC (https://github.com/seanken/CellLevel_QC). It is a simple java program, all one has to do is download the jar file and run it on the outs directory from CellRanger (see the github for details). The code does not do anything particularly clever, for the most part just goes line by line in the bam file and extracts information from each bam entry. It returns many cell level QC metrics that might be of interest (% intronic reads, % intergenic, % reads trimmed by CellRanger, etc). 
 
@@ -42,7 +42,7 @@ The first thing to look at is the nUMI versus the % intronic reads, colored by i
 ggplot(dat,aes(x=nUMI,y=intronic,color=Cell))+geom_point()+scale_x_log10()+ylab("Percent Intronic Reads")
 ```
 
-![Identifying Nuclei](/Images_Single-Cell-Level-Q/Cell.label.png)
+![Identifying Nuclei](https://github.com/seanken/seanken.github.io/tree/main/static/Images_Single-Cell-Level-Q/Cell.label.png)
 
 Can see a nice seperation into 3 distinct clusters (with some other droplets here or there) as one might hope/expect, including seeing a cluster that corresponds very well to the CellRanger labelled nuclei (this is not always so clean, sometimes CellRanger definitely sets the cutoff poorly, eleading to loss of nuclei or empty droplets being misidentified as nuclei). We do, however, have many other metrics. We can first look at how the different metric compare using Spearman correlation:
 
@@ -53,7 +53,7 @@ COR=cor(dat[,c(2:14,16)],method="spearman")
 Heatmap(COR)
 ```
 
-![Heatmap](/Images_Single-Cell-Level-Q/Heatmap.png)
+![Heatmap](https://github.com/seanken/seanken.github.io/tree/main/static/Images_Single-Cell-Level-Q/Heatmap.png)
 
 For definition of each of the metrics see the CellLevel_QC github.
 
@@ -63,7 +63,7 @@ Can see obvious structure in this plot. The most obvious strucuture comes from t
 ggplot(dat,aes(x=nUMI,y=intronic,color=polyA>1))+geom_point()+scale_x_log10()+ylab("Percent Intronic Reads")
 ```
 
-![PolyA Trimming](/Images_Single-Cell-Level-Q/PolyA.label.png)
+![PolyA Trimming](https://github.com/seanken/seanken.github.io/tree/main/static/Images_Single-Cell-Level-Q/PolyA.label.png)
 
 Can see that most of the droplets with high % polyA trimming are the lower nUMI, lower intronic droplets, which are likely empty droplets. We see something similiar for trimming of the TSO sequence, suggesting these metrics might be useful for better seperating empty droplets and real nuclei (in cases were it is less clear than the above).
 
