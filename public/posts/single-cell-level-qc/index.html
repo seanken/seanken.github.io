@@ -63,7 +63,7 @@
   "headline": "Single Cell Level QC",
   "description" : "Cell Level QC One thing that bothered me when I started working with 10X data (roughly 2016, after having worked with Smart-seq2 single nuclei data) is that for many metrics (percent intronic reads, percent intergenic reads, etc), though it was easy to get sample level values, but much less straightforward to get cell level metrics. Since then the situation has gotten better, with much work on using different metrics to help remove low quality cells.",
   "inLanguage" : "en",
-  "wordCount":  916 ,
+  "wordCount":  912 ,
   "datePublished" : "2023-04-09T21:43:39",
   "dateModified" : "2023-04-09T21:43:39",
   "image" : "https:\/\/seanken.github.io\/public",
@@ -261,11 +261,11 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">COR=cor(dat[,c(2:14,16)],method=&#34;spearman&#34;)
 </span></span><span class="line"><span class="cl">Heatmap(COR)
-</span></span></code></pre></div><p>[insert plot]</p>
+</span></span></code></pre></div><p><img src="/Images_Single-Cell-Level-Q/Heatmap.png" alt="Heatmap"></p>
 <p>For definition of each of the metrics see the CellLevel_QC github.</p>
 <p>Can see obvious structure in this plot. The most obvious strucuture comes from total (total number of reads) being highly correlated with nUMI (not suprising), and from the percent antisense being highly correlated to percent intronic (also probably not suprising). One obvious question: can these other metrics be used to improve filtering? For example consider the polyA metric (the percent of reads in a cell that were trimmed to remove a polyA sequence). I particular, we can color the % intronic be nUMI plot by if the cell has &gt;1% of reads being trimmed for polyA:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ggplot(dat,aes(x=nUMI,y=intronic,color=polyA&gt;1))+geom_point()+scale_x_log10()+ylab(&#34;Percent Intronic Reads&#34;)
-</span></span></code></pre></div><p>[insert plot]</p>
+</span></span></code></pre></div><p><img src="/Images_Single-Cell-Level-Q/PolyA.label.png" alt="PolyA Trimming"></p>
 <p>Can see that most of the droplets with high % polyA trimming are the lower nUMI, lower intronic droplets, which are likely empty droplets. We see something similiar for trimming of the TSO sequence, suggesting these metrics might be useful for better seperating empty droplets and real nuclei (in cases were it is less clear than the above).</p>
 <h2 id="final-thoughts">Final Thoughts</h2>
 <p>Anyways, just wanted to share a tool that we have found useful for some of our analysis&ndash;hope others find it useful as well! Wondering what other insight we can get from these metrics. Also: happy to think about adding other metrics as well (assuming I have the time), so let me know if there are any!</p>
