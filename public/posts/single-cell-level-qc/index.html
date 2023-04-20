@@ -255,7 +255,7 @@
 </span></span><span class="line"><span class="cl">dat[&#34;Cell&#34;]=dat$CBC %in% cells
 </span></span></code></pre></div><p>The first thing to look at is the nUMI versus the % intronic reads, colored by if a droplet is declared a nuclei by CellRanger:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ggplot(dat,aes(x=nUMI,y=intronic,color=Cell))+geom_point()+scale_x_log10()+ylab(&#34;Percent Intronic Reads&#34;)
-</span></span></code></pre></div><p><img src="https://github.com/seanken/seanken.github.io/tree/main/static/Images_Single-Cell-Level-Q/Cell.label.png" alt="Identifying Nuclei"></p>
+</span></span></code></pre></div><p><img src="Cell.label.png" alt="Identifying Nuclei"></p>
 <p>Can see a nice seperation into 3 distinct clusters (with some other droplets here or there) as one might hope/expect, including seeing a cluster that corresponds very well to the CellRanger labelled nuclei (this is not always so clean, sometimes CellRanger definitely sets the cutoff poorly, eleading to loss of nuclei or empty droplets being misidentified as nuclei). We do, however, have many other metrics. We can first look at how the different metric compare using Spearman correlation:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">library(ComplexHeatmap)
 </span></span><span class="line"><span class="cl">

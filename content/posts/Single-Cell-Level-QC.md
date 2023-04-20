@@ -42,7 +42,7 @@ The first thing to look at is the nUMI versus the % intronic reads, colored by i
 ggplot(dat,aes(x=nUMI,y=intronic,color=Cell))+geom_point()+scale_x_log10()+ylab("Percent Intronic Reads")
 ```
 
-![Identifying Nuclei](https://github.com/seanken/seanken.github.io/tree/main/static/Images_Single-Cell-Level-Q/Cell.label.png)
+![Identifying Nuclei](Cell.label.png)
 
 Can see a nice seperation into 3 distinct clusters (with some other droplets here or there) as one might hope/expect, including seeing a cluster that corresponds very well to the CellRanger labelled nuclei (this is not always so clean, sometimes CellRanger definitely sets the cutoff poorly, eleading to loss of nuclei or empty droplets being misidentified as nuclei). We do, however, have many other metrics. We can first look at how the different metric compare using Spearman correlation:
 
